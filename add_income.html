@@ -1,0 +1,10 @@
+<form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.amount.label }} {{ form.amount(size=20) }}
+    </div>
+    <div>
+        {{ form.source.label }} {{ form.source(size=30) }}
+    </div>
+    <button type="submit">Add Income</button>
+</form>

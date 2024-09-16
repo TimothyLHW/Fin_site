@@ -1,0 +1,13 @@
+<form method="POST" action="">
+    {{ form.hidden_tag() }}
+    <div>
+        {{ form.amount.label }} {{ form.amount(size=20) }}
+    </div>
+    <div>
+        {{ form.category.label }} {{ form.category(size=30) }}
+    </div>
+    <div>
+        {{ form.description.label }} {{ form.description(size=40) }}
+    </div>
+    <button type="submit">Add Expense</button>
+</form>
